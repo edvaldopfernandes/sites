@@ -1,0 +1,40 @@
+.content{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 3%;
+}
+
+.right-content{
+    margin-left: 5%;
+}
+
+th{
+    border-bottom: solid 1px gainsboro;
+    padding: 5px;
+    text-align: left;
+}
+
+td{
+    border-bottom: solid 1px gainsboro;
+    padding: 5px;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column; /* Quebra em coluna */
+        margin-left: 5%;
+        margin-right: 5%;
+        align-items: center;
+    }
+
+    .right-content {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .left-content img {
+        max-width: 100%;
+        height: auto;
+    }
+}
