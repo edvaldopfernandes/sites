@@ -1,4 +1,10 @@
-let imagens = ["img/manicure_1.jpg", "img/manicure_2.jpg", "img/manicure_3.jpg"];
+let imagens = [
+  "/samira/img/galeria/foto (1).jpg", 
+  "/samira/img/galeria/foto (2).jpg", 
+  "/samira/img/galeria/foto (3).jpg",
+  "/samira/img/galeria/foto (4).jpg",
+  "/samira/img/galeria/foto (5).jpg"
+];
 let index = 0;
 
 function trocarImagem() {

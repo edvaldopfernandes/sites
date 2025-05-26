@@ -78,7 +78,7 @@ function fecharModal() {
 
 			<div class="galeria">
 				<?php
-				for ($i = 1; $i <= 50; $i++) {
+				for ($i = 1; $i <= 300; $i++) {
 					echo '<div class="imagem">';
 					echo '<img src="/samira/img/galeria/foto (' . $i . ').jpg" alt="Foto ' . $i . '" onclick="abrirModal(this.src)">';
 					echo '</div>';
