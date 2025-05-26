@@ -10,7 +10,7 @@
 
         <div class="content">
             <div class="left-content">
-                <img src="img/manicure.jpg" width="100%" height="auto" alt="Imagem 2">
+                <img src="img/foto.jpg" width="100%" height="auto" alt="Imagem 2">
             </div>
             <div class="right-content">
                 <p>Olá! Sou a <b>Samira</b>, especialista em unhas naturais e esmaltação em gel.</p>
