@@ -4,18 +4,17 @@
 <style>
 .galeria {
     display: grid;
-    grid-template-columns: repeat(10, 1fr); /* 10 colunas */
+    grid-template-columns: repeat(10, 1fr);
     gap: 10px;
     padding: 20px;
 }
 
 .imagem img {
-    width: 100%; /* Faz a imagem preencher a div */
+    width: 100%;
     height: auto;
     display: block;
 }
 
-/* Modal invisível por padrão */
 .modal {
     display: none; 
     position: fixed;
@@ -48,13 +47,11 @@
 
 @media (max-width: 768px) {
     .galeria {
-        grid-template-columns: repeat(2, 1fr); /* Mostra 2 por linha no celular */
+        grid-template-columns: repeat(2, 1fr);
     }
 }
-
 </style>
 
-<script src="js/slider.js"></script>
 <script>
 function abrirModal(src) {
     document.getElementById("modal").style.display = "block";
@@ -70,33 +67,39 @@ function fecharModal() {
 
 <body>
 
-	<div class="pagina">
+<div class="pagina">
 
-		<?php include 'header.php'; ?>
+    <?php include 'header.php'; ?>
 
-		<section class="conteudo">
+    <section class="conteudo">
 
-			<div class="galeria">
-				<?php
-				for ($i = 1; $i <= 300; $i++) {
-					echo '<div class="imagem">';
-					echo '<img src="/samira/img/galeria/foto (' . $i . ').jpg" alt="Foto ' . $i . '" onclick="abrirModal(this.src)">';
-					echo '</div>';
-				}
-				?>
-			</div>
+        <div class="galeria">
+            <?php
+                $diretorio = __DIR__ . '/img/galeria/fotos/';
+                $urlBase = '/samira/img/galeria/fotos/';
+                $extensoes = ['jpg', 'jpeg', 'png', 'webp', 'gif'];
 
-			<div id="modal" class="modal" onclick="fecharModal()">
-				<span class="fechar" onclick="fecharModal()">&times;</span>
-				<img class="modal-conteudo" id="imagemModal">
-			</div>
+                foreach ($extensoes as $ext) {
+                    foreach (glob($diretorio . "*.$ext") as $arquivo) {
+                        $arquivoNome = basename($arquivo);
+                        echo '<div class="imagem">';
+                        echo '<img src="' . $urlBase . $arquivoNome . '" alt="' . $arquivoNome . '" onclick="abrirModal(this.src)">';
+                        echo '</div>';
+                    }
+                }
+            ?>
+        </div>
 
-		</section>
-		
-	</div>
+        <div id="modal" class="modal" onclick="fecharModal()">
+            <span class="fechar" onclick="fecharModal()">&times;</span>
+            <img class="modal-conteudo" id="imagemModal">
+        </div>
 
-	<?php include 'footer.php'; ?>'
-	
+    </section>
+
+</div>
+
+<?php include 'footer.php'; ?>
+
 </body>
-
 </html>

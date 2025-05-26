@@ -1,9 +1,10 @@
 let imagens = [
-  "/samira/img/galeria/foto (1).jpg", 
-  "/samira/img/galeria/foto (2).jpg", 
-  "/samira/img/galeria/foto (3).jpg",
-  "/samira/img/galeria/foto (4).jpg",
-  "/samira/img/galeria/foto (5).jpg"
+  "/samira/img/galeria/fotos/foto_1.webp", 
+  "/samira/img/galeria/fotos/foto_5.webp", 
+  "/samira/img/galeria/fotos/foto_6.webp", 
+  "/samira/img/galeria/fotos/foto_7.webp",
+  "/samira/img/galeria/fotos/foto_8.webp",
+  "/samira/img/galeria/fotos/foto_9.webp"
 ];
 let index = 0;
 
