@@ -57,6 +57,6 @@
         window.location.href = "/samira/galeria.php";
     }
 	function openWhats(){
-        window.location.href = "https://wa.me/5511956571989";
+        window.location.href = "https://wa.me/5517996040305&text=Oi%2C+tudo+bem%3F";
     }
 </script>

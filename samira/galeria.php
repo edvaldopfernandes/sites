@@ -80,7 +80,7 @@ function fecharModal() {
 				<?php
 				for ($i = 1; $i <= 50; $i++) {
 					echo '<div class="imagem">';
-					echo '<img src="img/manicure_' . $i . '.jpg" alt="Foto ' . $i . '" onclick="abrirModal(this.src)">';
+					echo '<img src="/samira/img/galeria/foto (' . $i . ').jpg" alt="Foto ' . $i . '" onclick="abrirModal(this.src)">';
 					echo '</div>';
 				}
 				?>
