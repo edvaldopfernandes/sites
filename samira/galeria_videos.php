@@ -88,7 +88,7 @@ function fecharModal() {
                     }
                 }
             ?>
-        </div>
+        </div> 
 
         <div id="modal" class="modal" onclick="fecharModal()">
             <span class="fechar" onclick="fecharModal()">&times;</span>
